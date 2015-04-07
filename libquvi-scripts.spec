@@ -1,7 +1,7 @@
 Summary:	Embedded lua scripts for parsing media details
 Name:		libquvi-scripts
 Version:	0.4.21
-Release:	2
+Release:	3
 Epoch:		1
 Group:		Networking/Other
 License:	LGPLv2+
@@ -14,7 +14,7 @@ libquvi-scripts contains the embedded lua scripts that libquvi uses for
 parsing the media details. Some additional utility scripts are also
 included.
 
-%package	devel
+%package devel
 Summary:	The pkgconfig for %{name}
 Group:		Development/Other
 Requires:	%{name} = %{EVRD}
@@ -26,7 +26,7 @@ The pkgconfig for %{name}.
 %setup -q
 
 %build
-%configure	--libdir=%{_datadir}
+%configure --libdir=%{_datadir}
 %make
 
 %install
