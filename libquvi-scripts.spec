@@ -1,7 +1,7 @@
 Summary:	Embedded lua scripts for parsing media details
 Name:		libquvi-scripts
 Version:	0.4.21
-Release:	3
+Release:	4
 Epoch:		1
 Group:		Networking/Other
 License:	LGPLv2+
