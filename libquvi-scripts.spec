@@ -5,7 +5,7 @@ Release:	7
 Epoch:		1
 Group:		Networking/Other
 License:	LGPLv2+
-Url:		http://quvi.sourceforge.net/
+Url:		https://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
