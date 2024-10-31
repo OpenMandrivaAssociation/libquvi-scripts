@@ -8,7 +8,7 @@ Url:		https://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
-Obsolete:  	libquvi-scripts0.9
+Obsoletes:  	libquvi-scripts0.9
 
 %description
 libquvi-scripts contains the embedded lua scripts that libquvi uses for
@@ -19,7 +19,7 @@ included.
 Summary:	The pkgconfig for %{name}
 Group:		Development/Other
 Requires:	%{name} = %{EVRD}
-Obsolete:  libquvi-scripts0.9-devel
+Obsoletes:  libquvi-scripts0.9-devel
 
 %description	devel
 The pkgconfig for %{name}.
