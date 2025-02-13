@@ -1,7 +1,7 @@
 Summary:	Embedded lua scripts for parsing media details
 Name:		libquvi-scripts
 Version:	0.9.20131130
-Release:	8
+Release:	9
 Group:		Networking/Other
 License:	LGPLv2+
 Url:		https://quvi.sourceforge.net/
@@ -33,6 +33,8 @@ The pkgconfig for %{name}.
 
 %install
 %make_install
+# For compatibility with libquvi 0.4.x
+ln -s libquvi-scripts-0.9.pc %{buildroot}%{_datadir}/pkgconfig/libquvi-scripts.pc
 
 %files
 %doc ChangeLog COPYING README
