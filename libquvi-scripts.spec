@@ -10,6 +10,11 @@ BuildArch:	noarch
 
 Obsoletes:  	libquvi-scripts0.9
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 libquvi-scripts contains the embedded lua scripts that libquvi uses for
 parsing the media details. Some additional utility scripts are also
