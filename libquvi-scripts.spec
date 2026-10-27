@@ -1,18 +1,20 @@
 Summary:	Embedded lua scripts for parsing media details
 Name:		libquvi-scripts
 Version:	0.9.20131130
-Release:	9
+Release:	10
 Group:		Networking/Other
 License:	LGPLv2+
 Url:		https://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
-Obsoletes:  	libquvi-scripts0.9
+# libquvi 0.9 still requires this name. Keep the obsolete versioned so
+# this package does not obsolete its own provide.
+Provides:	libquvi-scripts0.9 = %{version}-%{release}
+Obsoletes:	libquvi-scripts0.9 < %{version}-%{release}
 
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
 %description
@@ -24,7 +26,8 @@ included.
 Summary:	The pkgconfig for %{name}
 Group:		Development/Other
 Requires:	%{name} = %{EVRD}
-Obsoletes:  libquvi-scripts0.9-devel
+Provides:	libquvi-scripts0.9-devel = %{version}-%{release}
+Obsoletes:	libquvi-scripts0.9-devel < %{version}-%{release}
 
 %description	devel
 The pkgconfig for %{name}.
